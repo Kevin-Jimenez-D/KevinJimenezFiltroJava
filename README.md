@@ -22,3 +22,7 @@ La ruta del archivo sql donde se creo la base de datos, juntos con sus tablas y 
 **Diagrama de clases:**
 
 ![image](src/main/java/com/mycompany/kevinjimenezfiltrojava/diagramaClases/diagramaDeClases.jpg)
+
+**Notas:**
+
+No me alcanzo el tiempo para documentar todo acá, pero en el archivo KevinJimenezFiltroJava esta comentado muchos de los requerimientos y como funcionaba
