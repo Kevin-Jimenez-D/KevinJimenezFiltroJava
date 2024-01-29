@@ -4,6 +4,8 @@
 
 package com.mycompany.kevinjimenezfiltrojava;
 
+import com.mycompany.kevinjimenezfiltrojava.MisionNinja.Controlador.MisionNinjaControlador;
+import com.mycompany.kevinjimenezfiltrojava.MisionNinja.Modelo.clases.MisionNinja;
 import com.mycompany.kevinjimenezfiltrojava.Ninja.Controlador.NinjaControlador;
 import com.mycompany.kevinjimenezfiltrojava.Ninja.Modelo.DAO.NinjaDao;
 import com.mycompany.kevinjimenezfiltrojava.Ninja.Modelo.clases.Ninja;
@@ -11,6 +13,8 @@ import com.mycompany.kevinjimenezfiltrojava.Ninja.Modelo.clases.builder.NinjaBui
 import com.mycompany.kevinjimenezfiltrojava.Ninja.Modelo.clases.builder.NinjaConcreteBuilder;
 import com.mycompany.kevinjimenezfiltrojava.Persistencia.BDConnection;
 import com.mycompany.kevinjimenezfiltrojava.Persistencia.Operations;
+import java.time.LocalDate;
+import java.time.Month;
 
 /**
  *
@@ -50,8 +54,8 @@ public class KevinJimenezFiltroJava {
             .aldea("Egipto")
             .build();
 
-        //Instanciar de nuevo
-          ninjaControlador.insertNinja(promotion1);
+        //Instanciar de nuevo EXITOSO
+//          ninjaControlador.insertNinja(promotion1);
        
         //TEST DELETE SUCESFULL
 //            promotionController.delete(1); 
@@ -88,6 +92,37 @@ public class KevinJimenezFiltroJava {
 //        promotionController.updatePromotion(promotion2);
 
         //NINJA FIN
+        
+        
+        
+        
+        
+        //MISION_NINJA INICIO
+        
+        /*
+        Esta es la tarea 
+        Asignar una misión a un ninja, registrando la fecha de inicio
+        Aca registra los datos y no se coloca fecha fin porque esta en mision
+        */
+        
+        //Test save 
+//        Operations.setConnection(BDConnection.MySQLConnection());
+        
+        MisionNinjaControlador misionNinjaControlador = new MisionNinjaControlador();
+        
+        MisionNinja misionNinja1 = new MisionNinja();
+        
+        misionNinja1.setIdNinja(1);
+        misionNinja1.setIdMision(2);
+        misionNinja1.setFechaInicio(LocalDate.of(2012, 10, 10));
+        //misionNinja1.setFechaFin(LocalDate.of(2012, 10, 28));
+        
+        
+        //The code of test in ProductController.java EXITOSO
+        //Esto es lo que se debe comentar o descomentar
+        misionNinjaControlador.insertMisionNinja(misionNinja1);
+        
+        //MISION_NINJA INICIO
         
     }
 }

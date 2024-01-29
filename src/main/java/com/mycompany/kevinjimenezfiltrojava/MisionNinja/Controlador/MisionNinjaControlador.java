@@ -4,10 +4,7 @@
  */
 package com.mycompany.kevinjimenezfiltrojava.MisionNinja.Controlador;
 
-import com.mycompany.kevinjimenezfiltrojava.Dao.IGetAllDao;
-import com.mycompany.kevinjimenezfiltrojava.Dao.IGetByIdDao;
-import com.mycompany.kevinjimenezfiltrojava.Dao.ISaveDao;
-import com.mycompany.kevinjimenezfiltrojava.Dao.IUpdateDao;
+import com.mycompany.kevinjimenezfiltrojava.MisionNinja.Modelo.DAO.MisionNinjaDao;
 import com.mycompany.kevinjimenezfiltrojava.MisionNinja.Modelo.clases.MisionNinja;
 import java.util.List;
 
@@ -15,26 +12,27 @@ import java.util.List;
  *
  * @author user
  */
-public class MisionNinjaControlador implements ISaveDao<MisionNinja>, IGetByIdDao<MisionNinja>, IUpdateDao<MisionNinja>, IGetAllDao<MisionNinja> {
-
-    @Override
-    public void save(MisionNinja t) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+public class MisionNinjaControlador{
+    
+    //Instanciar
+    private static MisionNinjaDao misionNinjaDao = new MisionNinjaDao();
+    
+    //The methods that I created after the static or void "names" were called in HuanSync to test them
+    //save, getAll and update are found in all Dao interfaces within the code
+    public static void insertMisionNinja(MisionNinja misionNinja){
+        misionNinjaDao.save(misionNinja);
     }
-
-    @Override
-    public MisionNinja getById(long id) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    
+    public static  List<MisionNinja> getAllMisionNinja(){
+        return misionNinjaDao.getAll();
     }
-
-    @Override
-    public void update(MisionNinja t) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    
+    public static MisionNinja getByIdMisionNinja(long misionNinjaId){
+        return misionNinjaDao.getById(misionNinjaId); 
     }
-
-    @Override
-    public List<MisionNinja> getAll() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    
+    public static void updateMisionNinja(MisionNinja misionNinja) {
+        misionNinjaDao.update(misionNinja);
     }
     
 }
