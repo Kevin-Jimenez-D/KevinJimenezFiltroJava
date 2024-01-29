@@ -47,7 +47,7 @@ public class KevinJimenezFiltroJava {
 
         NinjaBuilder ninjaBuilder = new NinjaConcreteBuilder();
 
-        Ninja promotion1 = ninjaBuilder
+        Ninja ninja1 = ninjaBuilder
             .id(4)
             .nombre("Pepe")
             .rango("Bajo")
@@ -55,7 +55,7 @@ public class KevinJimenezFiltroJava {
             .build();
 
         //Instanciar de nuevo EXITOSO
-//          ninjaControlador.insertNinja(promotion1);
+//          ninjaControlador.insertNinja(ninja1);
        
         //TEST DELETE SUCESFULL
 //            promotionController.delete(1); 
@@ -119,8 +119,31 @@ public class KevinJimenezFiltroJava {
         
         
         //The code of test in ProductController.java EXITOSO
-        //Esto es lo que se debe comentar o descomentar
-        misionNinjaControlador.insertMisionNinja(misionNinja1);
+        //Esto es lo que se debe comentar o descomentar si deseo agregar esos datos o no
+//        misionNinjaControlador.insertMisionNinja(misionNinja1);
+
+
+        /*
+        Esta es la tarea 
+        Mostrar las misiones disponibles para un ninja en especifico; hay un pequeño error porque le llegan nulos pero asi seria la logica
+        
+        Mostrar las misiones completadas para un ninja en especifico; lo hace bien porque no arroja resultados nulos
+        */
+
+        //Test getById EXITOSO, solo que analiza de a uno
+            MisionNinja ninjaList = MisionNinjaControlador.getByIdMisionNinja(1);
+//            System.out.println(ninjaList);
+            
+            
+            if(ninjaList.getFechaFin()==null){
+                System.out.println("Misiones disponibles");
+                System.out.println(ninjaList);
+            }else{
+                System.out.println("Misiones completadas");
+                System.out.println(ninjaList);
+            }
+            
+        
         
         //MISION_NINJA INICIO
         
