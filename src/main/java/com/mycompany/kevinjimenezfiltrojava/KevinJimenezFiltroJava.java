@@ -51,7 +51,7 @@ public class KevinJimenezFiltroJava {
             .build();
 
         //Instanciar de nuevo
-         ninjaControlador.insertNinja(promotion1);
+          ninjaControlador.insertNinja(promotion1);
        
         //TEST DELETE SUCESFULL
 //            promotionController.delete(1); 

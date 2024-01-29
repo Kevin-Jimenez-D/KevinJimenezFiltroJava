@@ -1,11 +1,14 @@
 C:\Users\user\Documents\NetBeansProjects\KevinJimenezFiltroJava\src\main\java\com\mycompany\kevinjimenezfiltrojava\Ninja\Modelo\clases\builder\NinjaBuilder.java
 C:\Users\user\Documents\NetBeansProjects\KevinJimenezFiltroJava\src\main\java\com\mycompany\kevinjimenezfiltrojava\Dao\IUpdateDao.java
 C:\Users\user\Documents\NetBeansProjects\KevinJimenezFiltroJava\src\main\java\com\mycompany\kevinjimenezfiltrojava\Ninja\Modelo\clases\Ninja.java
+C:\Users\user\Documents\NetBeansProjects\KevinJimenezFiltroJava\src\main\java\com\mycompany\kevinjimenezfiltrojava\MisionNinja\Modelo\clases\MisionNinja.java
 C:\Users\user\Documents\NetBeansProjects\KevinJimenezFiltroJava\src\main\java\com\mycompany\kevinjimenezfiltrojava\Dao\IGetAll.java
 C:\Users\user\Documents\NetBeansProjects\KevinJimenezFiltroJava\src\main\java\com\mycompany\kevinjimenezfiltrojava\Dao\IGetByIdDao.java
 C:\Users\user\Documents\NetBeansProjects\KevinJimenezFiltroJava\src\main\java\com\mycompany\kevinjimenezfiltrojava\Dao\ISaveDao.java
 C:\Users\user\Documents\NetBeansProjects\KevinJimenezFiltroJava\src\main\java\com\mycompany\kevinjimenezfiltrojava\Dao\IDao.java
 C:\Users\user\Documents\NetBeansProjects\KevinJimenezFiltroJava\src\main\java\com\mycompany\kevinjimenezfiltrojava\Persistencia\BDConnection.java
+C:\Users\user\Documents\NetBeansProjects\KevinJimenezFiltroJava\src\main\java\com\mycompany\kevinjimenezfiltrojava\MisionNinja\Controlador\MisionNinjaControlador.java
+C:\Users\user\Documents\NetBeansProjects\KevinJimenezFiltroJava\src\main\java\com\mycompany\kevinjimenezfiltrojava\MisionNinja\Modelo\DAO\MisionNinjaDao.java
 C:\Users\user\Documents\NetBeansProjects\KevinJimenezFiltroJava\src\main\java\com\mycompany\kevinjimenezfiltrojava\Ninja\Modelo\DAO\NinjaDao.java
 C:\Users\user\Documents\NetBeansProjects\KevinJimenezFiltroJava\src\main\java\com\mycompany\kevinjimenezfiltrojava\Ninja\Modelo\clases\builder\NinjaConcreteBuilder.java
 C:\Users\user\Documents\NetBeansProjects\KevinJimenezFiltroJava\src\main\java\com\mycompany\kevinjimenezfiltrojava\Dao\IGetAllDao.java
