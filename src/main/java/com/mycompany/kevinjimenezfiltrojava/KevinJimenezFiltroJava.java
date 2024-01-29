@@ -13,6 +13,11 @@ import com.mycompany.kevinjimenezfiltrojava.Ninja.Modelo.clases.builder.NinjaBui
 import com.mycompany.kevinjimenezfiltrojava.Ninja.Modelo.clases.builder.NinjaConcreteBuilder;
 import com.mycompany.kevinjimenezfiltrojava.Persistencia.BDConnection;
 import com.mycompany.kevinjimenezfiltrojava.Persistencia.Operations;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.PrintWriter;
 import java.time.LocalDate;
 import java.time.Month;
 
@@ -146,6 +151,92 @@ public class KevinJimenezFiltroJava {
         
         
         //MISION_NINJA INICIO
+        
+        
+        
+        
+        //LECTURA INICIO
+        //Abrir el archivo que esta en 
+        /*
+        //C:\Users/user\Documents\NetBeansProjects\KevinJimenezFiltroJava\src\main\java\com\mycompany\kevinjimenezfiltrojava\archivo.txt
+        */
+        
+        
+        //Leer todo el contenido de un archivo
+        File archivo = null;
+        FileReader reader = null;
+        BufferedReader buffer = null;
+        try {
+            javax.swing.JFileChooser j = new javax.swing.JFileChooser();
+            j.showOpenDialog(j);
+            String path = j.getSelectedFile().getAbsolutePath();
+            archivo = new File(path);
+            reader = new FileReader(archivo);
+            buffer = new BufferedReader(reader);
+            String linea;
+            while ((linea = buffer.readLine()) != null) {
+                System.out.println(linea);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (null != reader) {
+                    reader.close();
+                }
+                if (null != buffer) {
+                    buffer.close();
+                }
+            } catch (Exception e2) {
+                e2.printStackTrace();
+            }
+        }
+        
+        //LECTURA FIN
+        
+        
+        
+        //ESCRITURA INICIO
+        
+//        /*
+//        Estado booleano que determina si se desea escribir en el archivo desde el principio o desde cero False
+//        o agregar al contenido existente True
+//        */        
+        
+        File archivo1 = null;
+        FileWriter writer1 = null;
+        PrintWriter pw = null;
+        
+        try {
+            javax.swing.JFileChooser j = new javax.swing.JFileChooser();
+            j.showOpenDialog(j);
+            String path = j.getSelectedFile().getAbsolutePath();
+            archivo1 = new File(path);
+            writer1 = new FileWriter(archivo1);
+            pw = new PrintWriter(writer1);
+//            for(int i=0; i<10;i++){
+//                pw.println("Linea " + i);
+//            }
+                pw.println(ninjaList);
+            
+        }catch (Exception e) {
+            e.printStackTrace();
+        }finally {
+            try {
+                if (null != archivo1) {
+                    writer1.close();
+                }
+                if (null != archivo1) {
+                    writer1.close();
+                }
+            } catch (Exception e2) {
+                e2.printStackTrace();
+            }
+        }
+
+
+        //ESCRITURA INICIO
+        
         
     }
 }

@@ -1,0 +1,1 @@
+MisionNinja{idNinja=1, idMision=1, fechaInicio=1960-12-18, fechaFin=1960-12-31}
